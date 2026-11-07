@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <canvas id="gold-dust"></canvas>
+        <div class="loader-content">
+            <button id="play" class="start-btn">Open Celebration</button>
+        </div>
+    </div>
+
+    <main id="main" class="main-content" style="display: none;">
+        <canvas id="confetti"></canvas>
+        
+        <div class="container">
+            <div class="content-wrapper">
+                <header>
+                    <h1 id="name" class="recipient-name">MY LOVE </h1>
+                </header>
+
+                <div class="typing-container">
+                    <div id="typed-strings">
+                        <p>Happy Birthday!</p>
+                        <p>Have a wonderful day...</p>
+                        <p>Filled with joy and happiness.</p>
+                    </div>
+                    <span id="typed"></span>
+                </div>
+
+                <div class="visuals">
+                    <svg class="cake-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="20" y="50" width="60" height="30" rx="5" fill="#D4AF37" opacity="0.8"/>
+                        <rect x="30" y="30" width="40" height="20" rx="5" fill="#D4AF37"/>
+                        <rect x="48" y="15" width="4" height="15" fill="#333"/>
+                        <circle cx="50" cy="10" r="3" fill="#FFD700">
+                            <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" />
+                        </circle>
+                    </svg>
+                </div>
+
+                <footer>
+                    <a href="letter.html" class="letter-btn">Read My Message</a>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <audio id="song" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
